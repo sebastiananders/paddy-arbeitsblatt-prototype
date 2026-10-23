@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/*
+ * paddy design system tokens (Figma: Paddy Design System → ChatBot, botInputField).
+ * Values marked "approx" were not exposed on the nodes we could read; check against Figma.
+ */
+@theme {
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-paper: Arial, Helvetica, sans-serif;
+
+  /* Semantic colors */
+  --color-canvas: #f7f7fc; /* surface/canvas — approx */
+  --color-container: #ffffff; /* surface/container */
+  --color-container-2: #f9f9fe; /* surface/container-2 — approx */
+  --color-decorative-2: #ebebf4; /* content/decorative-2 */
+  --color-primary: #2f2d39; /* content/primary */
+  --color-secondary: #747180; /* content/secondary */
+  --color-brand: #5958f7; /* content/secondaryBrand */
+  --color-brand-hover: #4746e0; /* approx */
+  --color-brand-light: #eeeefe; /* content/secondaryLightBrand — approx */
+  --color-on-brand: #ffffff; /* onContent/onBrand */
+  --color-error: #d23f3f; /* system/error-1 — approx */
+  --color-error-light: #fdeeee; /* system/error-2 — approx */
+  --color-success: #23966b; /* system/success-1 — approx */
+  --color-success-light: #e8f6ef; /* system/success-2 — approx */
+  --color-warning: #b26a00; /* approx */
+  --color-warning-light: #fff5e5; /* approx */
+
+  /* Radius */
+  --radius-sm: 8px; /* radius/radius-sm */
+  --radius-md: 12px; /* approx */
+  --radius-lg: 16px; /* radius/radius-lg */
+  --radius-full: 160px; /* radius/radius-full */
+
+  /* Effects */
+  --shadow-large: 0px 4px 8px -4px rgba(0, 0, 0, 0.03), 0px 2px 32px 2px rgba(12, 11, 177, 0.08);
+  --shadow-paper: 0 1px 2px rgba(47, 45, 57, 0.08), 0 8px 24px -8px rgba(47, 45, 57, 0.16);
+
+  --animate-pulse-soft: pulse-soft 1.6s ease-in-out infinite;
+  --animate-fade-in: fade-in 240ms ease-out both;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Text styles from the design system */
+.heading-m { font-size: 24px; line-height: 1.3; font-weight: 500; }
+.heading-xs { font-size: 16px; line-height: 1.4; font-weight: 600; }
+.body-s { font-size: 14px; line-height: 1.5; font-weight: 500; }
+.body-xs { font-size: 12px; line-height: 1.5; font-weight: 500; letter-spacing: 0.12px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

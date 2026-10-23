@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300" width="540" height="300" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#111"/>
+    </marker>
+  </defs>
+  <rect width="540" height="300" fill="#fff"/>
+
+  <!-- Sun -->
+  <g stroke="#111" stroke-width="2" fill="none">
+    <circle cx="58" cy="52" r="20"/>
+    <path d="M58 20 V10 M58 84 V94 M26 52 H16 M90 52 H100 M35 29 L28 22 M81 29 L88 22 M35 75 L28 82 M81 75 L88 82"/>
+  </g>
+
+  <!-- Stem -->
+  <path d="M168 168 Q150 230 136 292" stroke="#111" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Leaf -->
+  <path d="M168 168 C215 72 395 58 492 138 C410 205 238 238 168 168 Z" fill="#fff" stroke="#111" stroke-width="2.5"/>
+  <path d="M168 168 Q320 138 492 138" stroke="#111" stroke-width="1.8" fill="none"/>
+  <g stroke="#111" stroke-width="1.2" fill="none">
+    <path d="M240 156 Q262 118 292 104"/>
+    <path d="M312 148 Q336 112 368 98"/>
+    <path d="M390 143 Q410 116 436 106"/>
+    <path d="M250 156 Q276 184 300 196"/>
+    <path d="M330 148 Q356 176 382 184"/>
+    <path d="M408 142 Q428 160 448 164"/>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#111" stroke-width="2.5" fill="none" marker-end="url(#head)">
+    <path d="M92 70 L214 120"/>              <!-- A: light onto leaf -->
+    <path d="M330 286 L316 214"/>            <!-- B: CO2 into underside -->
+    <path d="M118 286 L150 196"/>            <!-- C: water up the stem -->
+    <path d="M402 188 L448 262"/>            <!-- D: O2 out of underside -->
+  </g>
+
+  <!-- Letters -->
+  <g font-size="17" font-weight="700" text-anchor="middle" fill="#111">
+    <circle cx="150" cy="78" r="14" fill="#fff" stroke="#111" stroke-width="2"/>
+    <text x="150" y="84">A</text>
+    <circle cx="352" cy="260" r="14" fill="#fff" stroke="#111" stroke-width="2"/>
+    <text x="352" y="266">B</text>
+    <circle cx="98" cy="238" r="14" fill="#fff" stroke="#111" stroke-width="2"/>
+    <text x="98" y="244">C</text>
+    <circle cx="474" cy="232" r="14" fill="#fff" stroke="#111" stroke-width="2"/>
+    <text x="474" y="238">D</text>
+  </g>
+</svg>
