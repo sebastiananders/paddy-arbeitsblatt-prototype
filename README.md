@@ -4,6 +4,10 @@ Prototype of the Magic Chat flow: a teacher asks for a worksheet, Magic Chat rou
 Arbeitsblatt tool, progress streams in honestly, the document fills a canvas live, and the
 result downloads as a real `.docx`. Spec: Notion › Arbeitsblatt › *Flow & States v0*.
 
+**Scope (5 Nov):** the chat side is DESIGN-62. The split screen (canvas beside the chat) is
+forked into its own version, DESIGN-78. The canvas stays in this prototype so it can be
+tested later, but it is not part of DESIGN-62.
+
 ## What is real, what is scripted
 
 | Part | Status |

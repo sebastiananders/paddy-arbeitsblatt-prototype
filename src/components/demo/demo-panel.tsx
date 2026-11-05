@@ -66,8 +66,8 @@ export function DemoPanel({ onReset, onPrompt }: { onReset: () => void; onPrompt
           {toggle("slow", "Langsamer Schritt", "zeigt »Dauert länger als üblich«")}
 
           <p className="mt-3 mb-1 text-[11px] tracking-wide text-white/50 uppercase">Verhalten</p>
-          <p className="mt-1 text-[13px] text-white">Vorschau öffnet sich</p>
-          <p className="mb-1.5 text-[11px] text-white/55">CPO-Entscheidung #1</p>
+          <p className="mt-1 text-[13px] text-white">Split screen: Vorschau öffnet sich</p>
+          <p className="mb-1.5 text-[11px] text-white/55">Eigene Version, DESIGN-78 · nicht Teil von DESIGN-62</p>
           <div className="flex gap-1 text-[12px]">
             {(
               [
